@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:wght@400;500;600;700;800&family=Montserrat:wght@300;400;500;600;700&display=swap');
+*{
+    padding: 0%;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    min-height: 100vh;
+
+    background: linear-gradient(270deg, #004581, #018abd, #3a849c);
+    background-size: 600% 600%;
+
+    -webkit-animation: bgGradient 48s ease infinite;
+    -moz-animation: bgGradient 48s ease infinite;
+    animation: bgGradient 48s ease infinite;
+
+
+    overflow: hidden;
+    font-family: 'Montserrat', sans-serif;
+
+}
+#blob1{
+    position: absolute;
+    right: -30%;
+    bottom: -10%;
+    opacity: 0.5;
+    z-index: -2;
+}
+#blob2{
+    position: absolute;
+    top: -30%;
+    left: 0%;
+    opacity: 0.5;
+    z-index: -2;
+}
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+
+
+}
+h2{
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: 1.2px;
+    font-size: clamp(0.87rem, 0.7153rem + 1.1368vw, 1.1rem);
+    font-family: 'Montserrat', sans-serif;
+}
+h1 {
+    font-size: clamp(3.1rem, 5.7153rem + 1.6368vw, 6.5rem);
+    font-family: 'Albert Sans', sans-serif;
+    font-weight: 800;
+}
+h3{
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: 1.2px;
+    font-size: clamp(0.87rem, 0.7153rem + 1.1368vw, 1.1rem);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.icon {
+
+    text-align: right;
+    font-size: 40px;
+}
+
+.icon a {
+    text-decoration: none;
+    color: black;
+}
+
+
+.basic {
+
+    font-family: 'Spline Sans', sans-serif;
+    /* text-indent: 1cm; */
+    color:white;
+    height: 50vh;
+    width:  clamp(25rem, 27.7153rem + 10.6368vw, 50.5rem);;
+    background-color: rgba(253, 250, 250, 0.062);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    /* filter: blur(10px); */
+    border-radius: 20px;
+
+}
+
+.blur{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(249, 249, 253, 0.103);
+    position:absolute;
+    z-index: -1;
+    backdrop-filter: blur(10px);
+
+}
+
+
+
+
+@-webkit-keyframes bgGradient {
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@-moz-keyframes bgGradient {
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@keyframes bgGradient {
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
+}
