@@ -5,36 +5,46 @@
     box-sizing: border-box;
 }
 
+
+.fa-brands{
+    color: white;
+}
 body {
 
     min-height: 100vh;
 
-    background: linear-gradient(270deg, #004581, #018abd, #3a849c);
-    background-size: 600% 600%;
+    background: linear-gradient(270deg, #da43c5, #c39eca, #815583);
+    background-size: 1000% 1000%;
 
-    -webkit-animation: bgGradient 48s ease infinite;
-    -moz-animation: bgGradient 48s ease infinite;
-    animation: bgGradient 48s ease infinite;
+    -webkit-animation: bgGradient 30s ease infinite;
+    -moz-animation: bgGradient 30s ease infinite;
+    animation: bgGradient 30s ease infinite;
 
 
-    overflow: hidden;
+    
     font-family: 'Montserrat', sans-serif;
 
 }
+main{
+    position: relative;
+}
+/*  
 #blob1{
     position: absolute;
-    right: -30%;
-    bottom: -10%;
-    opacity: 0.5;
+    right: -12%;
+    bottom: -20%;
+    opacity: 0.4;
     z-index: -2;
 }
+
 #blob2{
     position: absolute;
-    top: -30%;
+    top: -0%;
     left: 0%;
-    opacity: 0.5;
+    opacity: 0.4;
     z-index: -2;
 }
+*/
 main{
     display: flex;
     align-items: center;
@@ -47,18 +57,18 @@ main{
 h2{
     text-align: center;
     font-weight: 400;
-    letter-spacing: 1.2px;
-    font-size: clamp(0.87rem, 0.7153rem + 1.1368vw, 1.1rem);
+    letter-spacing: 1.9px;
+    font-size: clamp(0.80rem, 0.6153rem + 0.9vw, 2.1rem);
     font-family: 'Montserrat', sans-serif;
 }
 h1 {
-    font-size: clamp(3.1rem, 5.7153rem + 1.6368vw, 6.5rem);
-    font-family: 'Albert Sans', sans-serif;
-    font-weight: 800;
+    font-size: clamp(3.1rem, 3.9153rem + .7368vw, 5.5rem);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
 }
 h3{
     text-align: center;
-    font-weight: 400;
+    font-weight: 500;
     letter-spacing: 1.2px;
     font-size: clamp(0.87rem, 0.7153rem + 1.1368vw, 1.1rem);
     font-family: 'Montserrat', sans-serif;
@@ -75,14 +85,41 @@ h3{
     color: black;
 }
 
+.header{
+ 
+    position: absolute;
+    width: 100%;
+    top: 0em;
+    padding-top: 2rem;
+    padding-right: 1rem;
+    
+}
+.nav-items{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 2rem;
+
+
+
+}
+
+.nav-items1{
+    list-style: none;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 2rem;
+
+}
 
 .basic {
 
     font-family: 'Spline Sans', sans-serif;
     /* text-indent: 1cm; */
     color:white;
-    height: 50vh;
-    width:  clamp(25rem, 27.7153rem + 10.6368vw, 50.5rem);;
+    height: 35vh;
+    width:  clamp(20rem, 25.7153rem + 8.6368vw, 50.5rem);;
     background-color: rgba(253, 250, 250, 0.062);
     display: flex;
     align-items: center;
@@ -92,13 +129,31 @@ h3{
     overflow: hidden;
     /* filter: blur(10px); */
     border-radius: 20px;
+    flex-wrap: wrap;
 
 }
+.project{
+    
+    color:white;
+    height: 35vh;
+    display: flex;
+    background-color: rgba(253, 250, 250, 0.062);
+    width:  clamp(20rem, 25.7153rem + 8.6368vw, 50.5rem);;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    top: 20cm;
+    border-radius: 20px;
+    flex-wrap: wrap;
+
+}
+
 
 .blur{
     height: 100%;
     width: 100%;
-    background-color: rgba(249, 249, 253, 0.103);
+    background-color: rgba(255, 255, 255, 0.103);
     position:absolute;
     z-index: -1;
     backdrop-filter: blur(10px);
@@ -149,3 +204,53 @@ h3{
         background-position: 0% 50%
     }
 }
+.blob {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background: linear-gradient(
+      180deg,
+      rgba(24, 67, 88, 0.42) 31.77%,
+      #5d7594 100%
+    );
+    mix-blend-mode: color-dodge;
+    -webkit-animation: move 15s infinite alternate;
+            animation: move 15s infinite alternate;
+    transition: 1s cubic-bezier(0.07, 0.8, 0.16, 1);
+  }
+  
+  .blob:hover {
+    width: 520px;
+    height: 520px;
+    -webkit-filter: blur(30px);
+            filter: blur(30px);
+    box-shadow:
+      inset 0 0 0 5px rgba(231, 54, 54, 0.6),
+      inset 100px 100px 0 0px #5137b1,
+      inset 200px 200px 0 0px #342446,
+      inset 300px 300px 0 0px #06395e;
+  }
+  
+  @-webkit-keyframes move {
+    from {
+      transform: translate(-500px, -200px) rotate(-90deg);
+      border-radius: 24% 76% 35% 65% / 27% 36% 64% 73%;
+    }
+  
+    to {
+      transform: translate(500px, 100px) rotate(-10deg);
+      border-radius: 76% 24% 33% 67% / 68% 55% 45% 32%;
+    }
+  }
+  
+  @keyframes move {
+    from {
+      transform: translate(-500px, -200px) rotate(-90deg);
+      border-radius: 24% 76% 35% 65% / 27% 36% 64% 73%;
+    }
+  
+    to {
+      transform: translate(500px, 100px) rotate(-10deg);
+      border-radius: 76% 24% 33% 67% / 68% 55% 45% 32%;
+    }
+  } 
